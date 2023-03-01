@@ -1,0 +1,13 @@
+<H1>Downriver Computer Store</H1>
+<h2>List Of Computer Products:</h2>
+<div *ngFor="let product of allProducts, index as i">
+    <a {{product.name}}> </a>
+</div>
+
+<!-- display list of products -->
+<ul>
+    <li *ngFor = "let product of allProducts">{{product.name}} | ${{product.price}}</li>
+</ul>
+
+<!-- display array count -->
+<h3>Total Product Count: {{allProducts.length}}</h3>
